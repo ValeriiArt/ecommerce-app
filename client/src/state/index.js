@@ -16,6 +16,10 @@ export const cartSlice = createSlice({
         },
 
         addToCart: (state, action) => {
+            state.cart = [...state.cart, action.payload.item]
+        },
+
+        removeFromCart: (state, action) => {
             state.cart = state.cart.filter((item) => item.id !== action.payload.id);
         },
 
@@ -48,6 +52,7 @@ export const cartSlice = createSlice({
 export const {
     setItems,
     addToCart,
+    removeFromCart,
     increaseCount,
     decreaseCount,
     setIsCartOpen,
