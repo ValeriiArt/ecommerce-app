@@ -11,11 +11,10 @@ const ShoppingList = () => {
     const items = useSelector((state) => state.cart.items);
     const isNonMobile = useMediaQuery('(min-width:600px)')
 
-    console.log('item', items)
 
-    const handleChange = (event, newValue) => {
+    const handleChange = (event, {/*newValue*/}) => {
         event.preventDefault();
-        setValue(newValue);
+        // setValue(newValue);
     };
 
     async function getItems() {
