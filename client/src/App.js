@@ -36,8 +36,8 @@ function App() {
           <Route path="checkout" element={<Checkout />} />
           <Route path="confirmation" element={ <Confirmation/> } />
         </Routes>
-        <Footer/>
         <CartMenu/>
+        <Footer/>
       </BrowserRouter>
     </div>
   )

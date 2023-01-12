@@ -12,9 +12,9 @@ const ShoppingList = () => {
     const isNonMobile = useMediaQuery('(min-width:600px)')
 
 
-    const handleChange = (event, {/*newValue*/}) => {
+    const handleChange = (event, newValue) => {
         event.preventDefault();
-        // setValue(newValue);
+        setValue(newValue);
     };
 
     async function getItems() {
